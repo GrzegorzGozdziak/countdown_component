@@ -25,7 +25,6 @@ Usage
 To use the countdown component, you can import it into your React.js application:
 
 ```javascript
-Copy code
 import Countdown from './Countdown';
 
 
