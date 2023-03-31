@@ -21,7 +21,7 @@ Install the dependencies:
 npm install
 ```
 
-Usage
+## Usage
 To use the countdown component, you can import it into your React.js application:
 
 ```javascript
