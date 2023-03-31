@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Countdown Component
+This is a simple countdown component built with React.js that can be used to display a countdown timer on a web page.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Getting Started
+Prerequisites
+To use this countdown component, you will need:
 
-## Available Scripts
+Node.js (v14 or later)
+NPM (v6 or later)
+## Installation
+To install the component, follow these steps:
 
-In the project directory, you can run:
+Clone the repository:
+```bash
+git clone https://github.com/GrzegorzGozdziak/countdown_component.git
+```
 
-### `npm start`
+Install the dependencies:
+Copy code
+npm install
+Usage
+To use the countdown component, you can import it into your React.js application:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+javascript
+Copy code
+import Countdown from './Countdown';
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+function App() {
+  return (
+    <div className="App">
+      <Countdown endDate={new Date('December 31, 2023 23:59:59')} />
+    </div>
+  );
+}
 
-### `npm test`
+export default App;
+In the example above, the Countdown component is imported and rendered with an endDate prop that specifies the date and time at which the countdown should end.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Props
+The Countdown component accepts the following props:
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+endDate: the date and time at which the countdown should end (required)
+prefix: a string to display before the countdown (default: "Time left:")
+suffix: a string to display after the countdown (default: "")
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
